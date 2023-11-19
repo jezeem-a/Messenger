@@ -19,6 +19,7 @@
 		B7FDAC042B092FFF0064AE16 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDAC032B092FFF0064AE16 /* VideoPlayerViewController.swift */; };
 		B7FDAC062B09301E0064AE16 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDAC052B09301E0064AE16 /* NewConversationViewController.swift */; };
 		B7FDAC082B09302D0064AE16 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDAC072B09302D0064AE16 /* ProfileViewController.swift */; };
+		B7FDAC0B2B093A1D0064AE16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDAC0A2B093A1D0064AE16 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B7FDAC032B092FFF0064AE16 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		B7FDAC052B09301E0064AE16 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		B7FDAC072B09302D0064AE16 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B7FDAC0A2B093A1D0064AE16 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FDABE72B09124D0064AE16 /* ConversationsViewController.swift */,
-				B7FDABFD2B0915B00064AE16 /* LoginViewController.swift */,
-				B7FDABFF2B0915BE0064AE16 /* RegisterViewController.swift */,
+				B7FDAC092B0933650064AE16 /* Login */,
 				B7FDAC012B092FF30064AE16 /* PhotoViewerViewController.swift */,
 				B7FDAC032B092FFF0064AE16 /* VideoPlayerViewController.swift */,
 				B7FDAC052B09301E0064AE16 /* NewConversationViewController.swift */,
@@ -120,6 +121,7 @@
 			children = (
 				B7FDABE32B09124D0064AE16 /* AppDelegate.swift */,
 				B7FDABE52B09124D0064AE16 /* SceneDelegate.swift */,
+				B7FDAC0A2B093A1D0064AE16 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,6 +133,15 @@
 				B7FDABEE2B09124F0064AE16 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B7FDAC092B0933650064AE16 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7FDABFD2B0915B00064AE16 /* LoginViewController.swift */,
+				B7FDABFF2B0915BE0064AE16 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				B7FDAC062B09301E0064AE16 /* NewConversationViewController.swift in Sources */,
 				B7FDABE82B09124D0064AE16 /* ConversationsViewController.swift in Sources */,
 				B7FDAC042B092FFF0064AE16 /* VideoPlayerViewController.swift in Sources */,
+				B7FDAC0B2B093A1D0064AE16 /* Extensions.swift in Sources */,
 				B7FDABE42B09124D0064AE16 /* AppDelegate.swift in Sources */,
 				B7FDAC082B09302D0064AE16 /* ProfileViewController.swift in Sources */,
 				B7FDABE62B09124D0064AE16 /* SceneDelegate.swift in Sources */,
@@ -367,10 +379,13 @@
 				DEVELOPMENT_TEAM = 2R3WQGHPH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to camera to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to Gallery to select a photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,10 +413,13 @@
 				DEVELOPMENT_TEAM = 2R3WQGHPH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to camera to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to Gallery to select a photo.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
